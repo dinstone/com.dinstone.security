@@ -1,7 +1,6 @@
 
 package com.dinstone.security;
 
-
 public class SecurityException extends ApplicationException {
 
     /**  */

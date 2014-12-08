@@ -25,7 +25,7 @@ public class AccessControlTag extends TagSupport {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see javax.servlet.jsp.tagext.TagSupport#doEndTag()
      */
     @Override
@@ -35,7 +35,7 @@ public class AccessControlTag extends TagSupport {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see javax.servlet.jsp.tagext.TagSupport#doStartTag()
      */
     @Override

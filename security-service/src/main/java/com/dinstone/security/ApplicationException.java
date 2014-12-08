@@ -47,14 +47,8 @@ public class ApplicationException extends RuntimeException {
         return exceptionType;
     }
 
-    /**
-     * the properties to get
-     *
-     * @return the properties
-     * @see ApplicationException#properties
-     */
-    public Map<String, Object> getProperties() {
-        return properties;
+    public Object getProperty(String name) {
+        return properties.get(name);
     }
 
     public ApplicationException setProperty(String name, Object value) {
@@ -107,10 +101,6 @@ public class ApplicationException extends RuntimeException {
         } else {
             return new ApplicationException(exceptionType, exception);
         }
-    }
-
-    public String getCode() {
-        return exceptionType != null ? exceptionType.toString() : null;
     }
 
 }

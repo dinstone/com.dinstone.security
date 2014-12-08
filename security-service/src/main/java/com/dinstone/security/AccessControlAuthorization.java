@@ -5,7 +5,7 @@ public interface AccessControlAuthorization {
 
     /**
      * authorize the operation.
-     * 
+     *
      * @param authentication
      * @param operation
      */

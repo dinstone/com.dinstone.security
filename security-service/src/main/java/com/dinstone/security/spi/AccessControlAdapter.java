@@ -63,7 +63,7 @@ public abstract class AccessControlAdapter implements AccessControlAuthenticatio
 
     /**
      * create authentication object.
-     * 
+     *
      * @param account
      * @param subject
      * @return

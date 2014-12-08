@@ -5,7 +5,7 @@ public interface AccessControlAuthentication {
 
     /**
      * authenticate the account.
-     * 
+     *
      * @param account
      * @return
      */
