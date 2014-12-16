@@ -26,7 +26,7 @@ public class AuthorizationHandlerInterceptor extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String operation = urlPathHelper.getLookupPathForRequest(request);
-        logger.info("access control intercept a request operation[{}]", operation);
+        logger.info("Authorization intercept a request operation[{}]", operation);
 
         Authentication authentication = (Authentication) WebUtils.getSessionAttribute(request, AUTHENTICATION_KEY);
         accessControlAuthorization.authorize(authentication, operation);

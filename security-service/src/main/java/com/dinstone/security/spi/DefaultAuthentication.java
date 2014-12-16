@@ -65,4 +65,16 @@ public class DefaultAuthentication implements Authentication, Serializable {
         addPermissions(permissions);
     }
 
+    @Override
+    public String getToken() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public int getExpiration() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
 }

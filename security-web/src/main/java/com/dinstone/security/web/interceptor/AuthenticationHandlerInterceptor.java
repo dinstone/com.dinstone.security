@@ -30,7 +30,7 @@ public class AuthenticationHandlerInterceptor extends HandlerInterceptorAdapter 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String operation = urlPathHelper.getLookupPathForRequest(request);
-        logger.info("authentication intercept a request operation[{}]", operation);
+        logger.info("Authentication intercept a request operation[{}]", operation);
 
         // ignored operation
         if (!ignoredOperations.contains(operation)) {
